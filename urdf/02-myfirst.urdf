@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="CC-43120-B">
+  <link
+    name="CC-43120-B">
+    <inertial>
+      <origin
+        xyz="8.0957E-16 7.542775321453E-17 0.038196"
+        rpy="0 0 0" />
+      <mass
+        value="1.2447" />
+      <inertia
+        ixx="0.02433"
+        ixy="-2.5923E-17"
+        ixz="-1.666E-17"
+        iyy="0.015798"
+        iyz="7.26199934553333E-18"
+        izz="0.035646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="/meshes/CC-43120-B.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 1 1" />
+        <texture
+          filename="/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="/meshes/CC-43120-B.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

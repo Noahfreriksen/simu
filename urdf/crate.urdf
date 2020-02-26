@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<robot name="crate">
+
+  <material name="black">
+    <color rgba="0 0 0 0"/>
+  </material>
+
+  <link name="walls">
+    <visual>
+      <geometry>
+        <box size="0.57 0.374 0.32"/>
+      </geometry>
+      <material name="black"/>
+      <origin xyz="0 0 0.16"/>
+    </visual>
+  </link>
+
+  <link name="bottom_edge">
+    <visual>
+      <geometry>
+        <box size="0.60 0.404 0.003"/>
+      </geometry>
+      <origin xyz="0 0 0.01415"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_wall" type="fixed">
+    <parent link="walls"/>
+    <child link="bottom_edge"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  27.4
+  <link name="middle_edge">
+    <visual>
+      <geometry>
+        <box size="0.60 0.404 0.003"/>
+      </geometry>
+      <origin xyz="0 0 0.2755"/>
+    </visual>
+  </link>
+
+  <joint name="middle_edge_to_wall" type="fixed">
+    <parent link="walls"/>
+    <child link="middle_edge"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <link name="top_edge">
+    <visual>
+      <geometry>
+        <box size="0.60 0.404 0.003"/>
+      </geometry>
+      <origin xyz="0 0 0.3185"/>
+    </visual>
+  </link>
+
+  <joint name="top_edge_to_wall" type="fixed">
+    <parent link="walls"/>
+    <child link="top_edge"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+</robot>
+				
